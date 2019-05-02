@@ -1,0 +1,14 @@
+#include <stdio.h>
+
+typedef
+enum {
+      JONATAN,
+      GOLDEN,
+      MUTSU,
+      GRANNY_SMITH,
+      GALA
+} AlmaType;
+
+void print_alma(AlmaType type) {
+  printf("%s",(char*)type);
+};

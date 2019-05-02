@@ -1,0 +1,27 @@
+/* Basic example */
+#include <stdlib.h>
+#include <stdio.h>
+
+typedef struct Customer* CustomerPtr;
+
+int age;
+
+struct Customer {
+  char	*name;
+  int	age;
+};
+
+CustomerPtr createCustomer(char *name, int age) {
+  CustomerPtr customer = malloc(sizeof * customer);
+  if (customer) {
+    struct Customer asd = {name, age};
+    customer = &asd;
+  }
+  return customer;
+}
+
+int main() {
+  CustomerPtr Peti = createCustomer("Peti", 30);
+  printf("Customer name is: %s, age is: %d\n", Peti->name, Peti->age);
+  return 0;
+}
